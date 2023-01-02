@@ -1,0 +1,32 @@
+<!DOCTYPE htl>
+<html>
+    <head>
+        <title>phone no. validation</title>
+      </head>
+      <body>
+          <form>
+             <input type="text" placeholder="enter valid ph no.." id="phone"><br>
+             
+             <script type="text/javascript">
+             
+             var phone = document.getElementById("phone");
+             
+             phone.addEventListener("input", function(){
+             
+             if(phone.value.length> 10 || phone.value.length<10)
+             {
+             phone.style.color = "lime";
+             }
+             else{
+             phone.style.color = "black";
+             }
+             
+             })
+             
+             
+             
+             
+             </script>
+          </form>
+      </body>
+   </html>
