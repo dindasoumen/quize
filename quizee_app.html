@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>quiza app</title>
+      <style type="text/css">
+      form{
+      width:90vw;
+      margin:0 auto;}
+      #btn{
+      position:absolute;
+      height:;
+      width:;
+      top:30%;
+      left:50%;
+      border:none;
+      background:rgba(0,190,0,0.6);
+      color:white;
+      padding:5px 10px;
+      border-radius:5px;
+      font-size:2rem;
+      font-weight:bold;}
+      #btn:hover{
+      background:rgba(150,0,0,0.5);
+      
+      }
+      
+      </style>
+    </head>
+    <body>
+         <h4>Answer the  question given below.. (4x1=4)</h4>
+    <form>
+        <p>Q1.what is 1+1=?</p>
+        <input type="radio" name="q1">4<br>
+        <input type="radio" name="q1" id="q1">2<br>
+        <input type="radio" name="q1">5<br>
+        <input type="radio" name="q1">0<br>
+        
+        <p>Q2.what is 5+15=?</p>
+        <input type="radio" name="q2">30<br>
+        <input type="radio" name="q2" >17<br>
+        <input type="radio" name="q2">60<br>
+        <input type="radio" name="q2" id="q2">20<br>
+        
+        <p>Q3.what is 11+0.1=?</p>
+        <input type="radio" name="q3" id="q3">11.1<br>
+        <input type="radio" name="q3" >11.01<br>
+        <input type="radio" name="q3">11.001<br>
+        <input type="radio" name="q3">11.10<br>
+        
+        <p>Q4.what is 4.4+6.01=?</p>
+        <input type="radio" name="qr">10.4<br>
+        <input type="radio" name="q4" >10.14<br>
+        <input type="radio" name="q4">10.04<br>
+        <input type="radio" name="q4" id="q4">10.41<br>
+       <button id="btn">submit</button>
+    </form>
+    
+    
+    
+    <script type="text/javascript">
+    
+    
+    var button = document.getElementById("btn");
+    
+    button.addEventListener("click", function(){
+    
+    var q1 = document.getElementById("q1").checked;
+    var q2 = document.getElementById("q2").checked;
+    
+    var q3 = document.getElementById("q3").checked;
+    
+    var q4 = document.getElementById("q4").checked;
+    var count = 0;
+    if(q1){
+    count++;
+    }
+    if(q2){
+    count++;
+    }
+    if(q3){
+    count++;
+    }
+    if(q4){
+    count++;
+    }
+    
+    alert("your score is " +count);
+    })
+    
+    
+    
+    </script>
+    </body>
+</html>
